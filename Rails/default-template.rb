@@ -103,6 +103,7 @@ end
 CODE
 
 generate "rspec:install"
+run "guard init rspec"
 
 remove_file "app/views/layouts/application.html.erb"
 create_file "app/views/layouts/application.html.haml", <<-CODE
