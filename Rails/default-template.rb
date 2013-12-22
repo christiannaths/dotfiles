@@ -1,3 +1,7 @@
+create_file "Procfile", <<-CODE
+web: bundle exec thin start -p $PORT
+CODE
+
 remove_file "Gemfile"
 create_file 'Gemfile', <<-CODE
 source 'https://rubygems.org'
