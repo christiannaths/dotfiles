@@ -63,10 +63,10 @@ development:
 test:
   <<: *default
   database: #{ @app_name }_test
-YAML
+CODE
 
 remove_file "config/routes.rb"
-create_file "config/routes.rb" <<-RUBY
+create_file "config/routes.rb", <<-CODE
 Rails.application.routes.draw do
   # root 'welcome#index'
 end
@@ -85,7 +85,7 @@ namespace :db do
 end
 CODE
 
-create_file "lib/tasks/reseed.rake", <<-RUBY
+create_file "lib/tasks/reseed.rake", <<-CODE
 # Drops, re-creates and re-migrates the database
 # Usage: rake db:remigrate
 namespace :db do
@@ -96,7 +96,7 @@ namespace :db do
   desc "Drop, create, migrate then seed the development database"
   task remigrate: ['environment', 'db:dev_only', 'db:drop', 'db:create', 'db:migrate']
 end
-RUBY
+CODE
 
 generate "rspec:install"
 
