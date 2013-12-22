@@ -1,0 +1,30 @@
+source 'https://rubygems.org'
+
+# Framework Stack
+gem 'rails', '4.1.0.beta1'
+gem 'spring', group: :development
+gem 'disable_assets_logger', group: :development
+gem 'awesome_print', group: :development
+
+# Auth
+gem 'bcrypt-ruby', :require => 'bcrypt'
+
+# Database & Server
+gem 'pg'
+gem 'thin'
+
+# Assets
+gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+
+# Templating
+gem 'haml-rails'
+
+# Testing
+gem 'rspec-rails', '~> 3.0.0.beta', group: [:test, :development]
+gem 'guard-rspec', group: [:test, :development], require: false
+gem 'factory_girl_rails', group: :test
+gem 'shoulda-matchers', group: :test
