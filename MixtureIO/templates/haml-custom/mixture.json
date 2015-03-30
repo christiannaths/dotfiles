@@ -1,0 +1,43 @@
+{
+  "convertHtml": {
+    "relativePaths": false
+  },
+  "sass": {
+    "outputStyle": "compact",
+    "sourceMap": true,
+    "cache": false,
+    "lineNumbers": false,
+    "debugInfo": false,
+    "globbing": true,
+    "useLibSass": false
+  },
+  "debug": false,
+  "domain": null,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": [
+    "assets"
+  ],
+  "preprocessorScriptOutput": "assets/javascripts",
+  "preprocessorStyleOutput": "assets/stylesheets",
+  "projectDescription": "A simple Haml example",
+  "projectName": "ui-design",
+  "publishedId": null,
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "application",
+  "templateDefaultPage": "index",
+  "templateDirectory": "views",
+  "type": "mixture",
+  "useCompass": false,
+  "autoPrefixer": {
+    "active": true,
+    "sourceMap": true,
+    "browsers": [
+      "last 1 version",
+      "> 1%",
+      "ie 8", "ie 9", "ie 10"
+    ]
+  }
+}
