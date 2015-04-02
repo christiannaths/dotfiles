@@ -1,0 +1,4 @@
+[
+  { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} },
+  { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
+]
