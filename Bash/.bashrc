@@ -11,6 +11,11 @@ export PS1="\n\[\033[0;37m\][\w] \[\033[0;93m\]» \[\033[0;37m\]"
 export CLICOLOR=1
 export TERM=xterm-256color
 
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/christiannaths/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
 # PATH
 # moved this to /etc/bashrc
 # PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
@@ -19,12 +24,17 @@ export TERM=xterm-256color
 source ~/.git-completion.sh
 
 # Alias'
-alias ls='ls -lhaG'
+alias ls='ls -la'
 
 alias gs='git status'
 alias gl='git log'
 alias ga='git add --all'
 alias gc='git commit'
+
+rake() {
+  bin/rake $1
+}
+
 
 gcm(){
   git add --all
@@ -89,6 +99,17 @@ winzip(){
 
 }
 
+base64-encode() {
+  openssl base64 < "$1" | tr -d '\n' | pbcopy
+  echo "copied to clipboard"
+}
+
 sass-watch(){
   sass --watch --line-numbers --style compact .:.
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Auto venv
+source ~/.scripts/virtualenv-auto-activate.sh
