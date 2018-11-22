@@ -6,3 +6,5 @@ alias gs='git status'
 alias gcm='git commit -am'
 alias gbr='git branch'
 alias gch='git checkout'
+
+gi() { curl -L -s https://www.gitignore.io/api/$@; }
