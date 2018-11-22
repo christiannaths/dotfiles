@@ -1,9 +1,20 @@
 # UNTESTED
 
+brew "chruby"
+brew "node"
+brew "openssl"
+brew "rsync"
+brew "ruby-install"
+brew "watchman"
+brew "wget"
+brew "zsh-completions"
+brew "zsh"
+
 cask_args appdir: "/Applications"
 tap "caskroom/cask"
+cask "1password"
+cask "dropbox"
 cask "google-chrome"
+cask "iterm2"
+cask "slack"
 cask "visual-studio-code"
-brew "zsh"
-brew "zsh-completions"
-brew "node"
