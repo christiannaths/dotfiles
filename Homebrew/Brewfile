@@ -1,5 +1,3 @@
-# UNTESTED
-
 brew "chruby"
 brew "node"
 brew "openssl"
@@ -16,6 +14,7 @@ tap "caskroom/cask"
 cask "1password"
 cask "alfred"
 cask "dropbox"
+cask "expressvpn"
 cask "google-chrome"
 cask "insomnia"
 cask "iterm2"
