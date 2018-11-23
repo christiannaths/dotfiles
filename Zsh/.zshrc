@@ -7,7 +7,9 @@ export ZSH=/Users/christiannaths/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+
+
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 # https://github.com/bhilburn/powerlevel9k
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
@@ -141,33 +143,28 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+HERE=${0:a:h}
 
-source ~/.zsh/git.zshrc
-source ~/.zsh/k8.zshrc
-source ~/.zsh/ruby.zshrc
-source ~/.zsh/node.zshrc
-source ~/.zsh/osx.zshrc
-source ~/.zsh/gcloud.zshrc
-source ~/.zsh/shortcuts.zshrc
-source ~/.zsh/kubectl-completion.zshrc
-source ~/.zsh/docker.zshrc
+source $HERE/git.zshrc
+source $HERE/k8.zshrc
+source $HERE/ruby.zshrc
+source $HERE/node.zshrc
+source $HERE/osx.zshrc
+source $HERE/gcloud.zshrc
+source $HERE/shortcuts.zshrc
+source $HERE/kubectl-completion.zshrc
+source $HERE/docker.zshrc
 
 # autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HERE/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # autoenv
 # https://github.com/Tarrasch/zsh-autoenv
-source ~/.zsh/zsh-autoenv
+source $HERE/zsh-autoenv
 
 # fast-syntax-highlighting
 # https://github.com/zdharma/fast-syntax-highlighting
-source ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $HERE/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 export PATH="/usr/local/sbin:$PATH"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/christiannaths/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/christiannaths/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/christiannaths/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/christiannaths/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
