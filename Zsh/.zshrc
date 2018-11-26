@@ -7,16 +7,23 @@ export ZSH=/Users/christiannaths/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+HERE=${0:a:h}
 
-
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+source $HERE/powerline/powerlevel9k/powerlevel9k.zsh-theme
+zsh $HERE/powerline/install.sh
 
 # https://github.com/bhilburn/powerlevel9k
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 # POWERLEVEL9K_MODE='powerline'
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(command_execution_time newline virtualenv newline vcs newline os_icon dir_writable dir)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  command_execution_time
+  newline
+  vcs
+  newline
+  os_icon dir_writable dir
+)
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 # POWERLEVEL9K_SHORTEN_DIR_LENGTH=0
@@ -143,7 +150,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-HERE=${0:a:h}
 
 source $HERE/git.zshrc
 source $HERE/k8.zshrc

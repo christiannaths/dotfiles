@@ -1,0 +1,9 @@
+[submodule "Zsh/powerline/fonts"]
+	path = Zsh/powerline/fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "Zsh/powerline/powerlevel9k"]
+	path = Zsh/powerline/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "Zsh/powerline/nerd-font"]
+	path = Zsh/powerline/nerd-font
+	url = https://github.com/ryanoasis/nerd-fonts.git
