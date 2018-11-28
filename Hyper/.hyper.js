@@ -220,21 +220,12 @@ const config = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    // 'hyper-tabs-enhanced',
-    'hyperterm-1password',
-    'hypercwd',
-    // 'hyperterm-bold-tab',
-    // '/Users/christiannaths/Projects/christiannaths/hyper-vertical-tabs',
-    'hyperline'
-  ],
+  plugins: ['hyperterm-1password', 'hypercwd'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: [
-    // 'hyper-vertical-tabs'
-  ],
+  localPlugins: [],
 
   keymaps: {
     // Example
