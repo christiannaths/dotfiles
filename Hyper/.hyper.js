@@ -7,6 +7,7 @@ const cloudCity = {
   blue: '#1dafd9',
   cyan: '#00ffff',
   dark: '#031530',
+  forest: 'rgba(0,150,107, 1)',
   green: '#31c89d',
   lavender: '#bb9ceb',
   light: '#ccd7de',
@@ -24,7 +25,7 @@ const cloudCity = {
   highlight: 'rgba(255, 202, 40, 0.33)'
 };
 
-module.exports = {
+const config = {
   config: {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
@@ -68,7 +69,69 @@ module.exports = {
     borderColor: cloudCity.white,
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      .hyper_main {
+        display: flex;
+      }
+
+      .header_header {
+        overflow: visible;
+        flex: 0 1 8em;
+        position: initial;
+      }
+
+      .terms_terms {
+        flex: 1;
+        position: relative;
+      }
+
+      .tabs_nav {
+        position: relative;
+        top: 34px;
+        background-color: ${cloudCity.white};
+        height: 100%;
+        border-right: 1px solid ${cloudCity.silver};
+        line-height: 1.5;
+      }
+
+      .tabs_list {
+        flex-direction: column;
+        margin: 0;
+        max-height: initial;
+      }
+
+      .tabs_title {
+        padding: 0.375em 0.5em;
+        text-align: right;
+        color: ${cloudCity.dark};
+        font-weight: bold;
+      }
+
+      .tab_tab {
+        padding: 0.375em 0.5em;
+        text-align: right;
+        flex: none;
+      }
+
+      .tab_text {
+        color: ${cloudCity.medium};
+        height: initial;
+        flex: none;
+        display: inline;
+      }
+
+      .tab_text.tab_textActive{
+        color: ${cloudCity.dark};
+        font-weight: bold;
+      }
+
+      .tab_textInner {
+        overflow: visible;
+        text-align: right;
+        position: static;
+        display: inline;
+      }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -83,7 +146,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    padding: '0 14px 12px 14px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -94,16 +157,16 @@ module.exports = {
       red: cloudCity.red,
       green: cloudCity.green,
       yellow: cloudCity.yellow,
-      blue: cloudCity.navy,
+      blue: cloudCity.blue,
       magenta: cloudCity.purple,
-      cyan: cloudCity.blue,
+      cyan: cloudCity.navy,
       white: cloudCity.silver,
       lightBlack: cloudCity.medium,
       lightRed: cloudCity.pink,
-      lightGreen: cloudCity.lime,
-      lightYellow: cloudCity.lemon,
-      lightBlue: cloudCity.cyan,
-      lightMagenta: cloudCity.lavender,
+      lightGreen: cloudCity.forest,
+      lightYellow: cloudCity.orange,
+      lightBlue: cloudCity.navy,
+      lightMagenta: cloudCity.purple,
       lightCyan: cloudCity.blue,
       lightWhite: cloudCity.white
     },
@@ -136,7 +199,7 @@ module.exports = {
     copyOnSelect: false,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true
+    defaultSSHApp: true,
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -146,6 +209,9 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    hypercwd: {
+      initialWorkingDirectory: '~/Projects'
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -154,15 +220,26 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    // 'hyper-tabs-enhanced',
+    'hyperterm-1password',
+    'hypercwd',
+    // 'hyperterm-bold-tab',
+    // '/Users/christiannaths/Projects/christiannaths/hyper-vertical-tabs',
+    'hyperline'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: [],
+  localPlugins: [
+    // 'hyper-vertical-tabs'
+  ],
 
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
   }
 };
+
+module.exports = config;
