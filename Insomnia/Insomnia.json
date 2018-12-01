@@ -1,0 +1,349 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-12-01T02:21:20.379Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_b517a9d41ec2441a8ce35c8c8dd82499",
+			"created": 1543255834209,
+			"description": "",
+			"modified": 1543255834209,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "wrk_4235cd0ec3474f1693f4a963decd141a",
+			"created": 1543255862397,
+			"description": "",
+			"modified": 1543255862397,
+			"name": "Tap Bio",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"created": 1543620018551,
+			"description": "",
+			"modified": 1543620018551,
+			"name": "GOODeCARD",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_fe98cf885f44482b8b5689be80f36332",
+			"color": null,
+			"created": 1543255834243,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1543255834243,
+			"modified": 1543255834243,
+			"name": "New Environment",
+			"parentId": "wrk_b517a9d41ec2441a8ce35c8c8dd82499",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_f0effad370a84ccc92cbe4d4f9db08f4",
+			"cookies": [],
+			"created": 1543255834245,
+			"modified": 1543255834245,
+			"name": "Default Jar",
+			"parentId": "wrk_b517a9d41ec2441a8ce35c8c8dd82499",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "env_f7bf9629bcd5442c98a506b189b5ea2a",
+			"color": null,
+			"created": 1543255862407,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1543255862407,
+			"modified": 1543255875028,
+			"name": "New Environment",
+			"parentId": "wrk_4235cd0ec3474f1693f4a963decd141a",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_d2a3962c28d24e2fbb49698263cf500b",
+			"cookies": [],
+			"created": 1543255862410,
+			"modified": 1543255862410,
+			"name": "Default Jar",
+			"parentId": "wrk_4235cd0ec3474f1693f4a963decd141a",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_c3d24db927ff4dd09632fcaa3413bfff",
+			"authentication": {},
+			"body": {},
+			"created": 1543255958550,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_567f758af8e347cfbb02ae78a6287707",
+					"name": "X-Referer",
+					"value": "http://localhost"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543255958551,
+			"method": "GET",
+			"modified": 1543620010007,
+			"name": "health",
+			"parameters": [],
+			"parentId": "wrk_4235cd0ec3474f1693f4a963decd141a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/health",
+			"_type": "request"
+		},
+		{
+			"_id": "req_dae12f46ad6042f9a29febdd9e4e3b14",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query {\\n  publicAccount(username: \\\"tapbiodeveloper\\\") {\\n    id\\n  }\\n}\"}"
+			},
+			"created": 1543256150166,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_66e9079528cf4f24b80930df1e3e3626",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_567f758af8e347cfbb02ae78a6287707",
+					"name": "X-Referer",
+					"value": "http://localhost"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543255958501,
+			"method": "POST",
+			"modified": 1543256247581,
+			"name": "publicAccount",
+			"parameters": [],
+			"parentId": "wrk_4235cd0ec3474f1693f4a963decd141a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "env_52187489063d4f1699e9b4c9193fb141",
+			"color": null,
+			"created": 1543620018582,
+			"data": {
+				"API_VERSION": "v1"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543620018582,
+			"modified": 1543628076571,
+			"name": "New Environment",
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b2894cc0f4b74d43acec18bfc5bf8f48",
+			"cookies": [],
+			"created": 1543620018584,
+			"modified": 1543620018584,
+			"name": "Default Jar",
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_679dbb53b29c40cc90048d645d987620",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"ref\": \"3\",\n\t\"customer\": {\n\t\t\"ref\": \"1\",\n\t\t\"email\": \"user@example.com\",\n\t\t\"first_name\": \"Example\",\n\t\t\"last_name\": \"User\"\n\t}\n}"
+			},
+			"created": 1543620068133,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_08f155855dbc490f9dcacc49ab14827c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543620068133,
+			"method": "POST",
+			"modified": 1543629790829,
+			"name": "order_create",
+			"parameters": [],
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/{{ API_VERSION  }}/webhooks/manual/order_create",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a3eefc6b4d9041e2a55322d10c430121",
+			"authentication": {},
+			"body": {},
+			"created": 1543627916152,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543620068183,
+			"method": "GET",
+			"modified": 1543628514352,
+			"name": "health",
+			"parameters": [],
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/health",
+			"_type": "request"
+		},
+		{
+			"_id": "req_35afa4c5c956451fbf3cdb647e21f80b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"card\": {\n    \"id\": 1,\n    \"theme_id\": 33,\n    \"access_token\": \"ABCDE12345\",\n    \"recipient_email\": \"christiannaths@gmail.com\",\n    \"recipient_name\": \"Testing12345\",\n    \"uploaded_photo_url\": null,\n    \"composed_photo_url\": null,\n    \"message\": null,\n    \"message_url\": null,\n    \"scheduled_at\": null,\n    \"customized_at\": \"2018-12-01T02:03:24.707Z\",\n    \"sent_at\": null,\n    \"recurring\": false,\n    \"active\": true,\n    \"created_at\": \"2017-03-21T03:24:11.862Z\",\n    \"updated_at\": \"2018-12-01T02:03:24.718Z\",\n    \"customer_id\": 1,\n    \"public_token\": \"6548028913\",\n    \"order_ref\": \"1032568658\",\n    \"subscription_ref\": null\n  },\n  \"customer\": {\n    \"id\": 1,\n    \"ref\": \"1\",\n    \"email\": \"christiannaths@gmail.com\",\n    \"country\": \"CA\",\n    \"first_name\": \"Christian\",\n    \"last_name\": \"Naths\",\n    \"location\": \"AB, CA\",\n    \"name\": \"\",\n    \"source\": null,\n    \"created_at\": \"2017-01-07T03:24:11.770Z\",\n    \"updated_at\": \"2017-01-07T03:24:11.778Z\"\n  },\n  \"reminders\": [],\n  \"order\": \"1032568658\",\n  \"subscription\": {},\n  \"theme\": {\n    \"id\": 33,\n    \"sku\": \"sepoct\",\n    \"background_color\": \"#71E8D0\",\n    \"border_color\": \"\",\n    \"text_color\": \"#000000\",\n    \"font_family\": \"Arvo\",\n    \"frame_url\": \"https://res.cloudinary.com/dkhkxtzoi/image/upload/v1530148621/themes/sepoct.png\",\n    \"default_message\": \"sepoct\",\n    \"default_photo_url\": \"https://res.cloudinary.com/dkhkxtzoi/image/upload/v1530148631/themes/sepoct-default.png\",\n    \"mandrill_template_slug\": \"\",\n    \"starts_at\": \"1972-08-14T00:00:00.000Z\",\n    \"created_at\": \"2017-01-07T02:59:15.061Z\",\n    \"updated_at\": \"2017-01-07T02:59:15.104Z\"\n  }\n}"
+			},
+			"created": 1543628522731,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_08f155855dbc490f9dcacc49ab14827c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543438013342,
+			"method": "PATCH",
+			"modified": 1543629957711,
+			"name": "cards#update",
+			"parameters": [],
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/{{ API_VERSION  }}/cards/ABCDE12345",
+			"_type": "request"
+		},
+		{
+			"_id": "req_559273114ca14537b9da3bf7b6567b31",
+			"authentication": {},
+			"body": {},
+			"created": 1543628639203,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543346985946.5,
+			"method": "GET",
+			"modified": 1543629949908,
+			"name": "cards#show",
+			"parameters": [],
+			"parentId": "wrk_f0ea30ba0f3e432e9d1cb9d2b8772f8d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ API_HOST  }}/{{ API_VERSION  }}/cards/ABCDE12345",
+			"_type": "request"
+		},
+		{
+			"_id": "env_fa0cc116a2804238bac32f02bf92c89a",
+			"color": "#00ff83",
+			"created": 1543255879993,
+			"data": {
+				"API_HOST": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543255879993,
+			"modified": 1543258196679,
+			"name": "local",
+			"parentId": "env_f7bf9629bcd5442c98a506b189b5ea2a",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_a71657af80fc41f6b24c557498f41d60",
+			"color": "#00fdff",
+			"created": 1543258123661,
+			"data": {
+				"API_HOST": "https://staging.api.tap.bio"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543258123661,
+			"modified": 1543258204112,
+			"name": "staging",
+			"parentId": "env_f7bf9629bcd5442c98a506b189b5ea2a",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_aa2eb9f3cb094801860453714e21c5fe",
+			"color": "#00f900",
+			"created": 1543620025181,
+			"data": {
+				"API_HOST": "http://localhost:5000",
+				"API_VERSION": "v1"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543620025181,
+			"modified": 1543628071241,
+			"name": "local",
+			"parentId": "env_52187489063d4f1699e9b4c9193fb141",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_62445753f7374bfa9ee91999a22e8ef2",
+			"color": "#00fdff",
+			"created": 1543627846230,
+			"data": {
+				"API_HOST": "http://staging-api.hellogoodybox.com",
+				"API_VERSION": "v1"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543627846230,
+			"modified": 1543628774893,
+			"name": "staging",
+			"parentId": "env_52187489063d4f1699e9b4c9193fb141",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_22849e530ee345ebb700f6b712518d8c",
+			"color": "#ff2600",
+			"created": 1543628083002,
+			"data": {
+				"API_HOST": "http://api.hellogoodybox.com",
+				"API_VERSION": "v1"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543628083002,
+			"modified": 1543628149832,
+			"name": "production",
+			"parentId": "env_52187489063d4f1699e9b4c9193fb141",
+			"_type": "environment"
+		}
+	]
+}
