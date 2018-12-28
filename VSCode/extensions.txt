@@ -1,5 +1,6 @@
-ms-vscode.sublime-keybindings
 dbaeumer.vscode-eslint
+dlech.chmod
+ms-vscode.sublime-keybindings
 rebornix.ruby
-yummygum.city-lights-icon-vsc
 wmaurer.change-case
+yummygum.city-lights-icon-vsc
