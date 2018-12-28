@@ -1,4 +1,4 @@
-alias ls="ls -aGo"
+alias ls="ls -AGFl"
 LSCOLORS=fxFxcxdxCxegedabagacad
 
 alias showall='defaults write com.apple.Finder AppleShowAllFiles YES'

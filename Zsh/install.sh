@@ -1,13 +1,22 @@
-#! /bin/sh
+#!/usr/local/bin/zsh
 
-SOURCE_DIR=$(cd `dirname $0` && pwd)
+HERE=${0:a:h}
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh ..."
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-echo "Done."
+echo "Done.\n"
 
-# Install zshrc
+# Install antigen
+echo "Installing zsh bundle ..."
+antibody bundle < $HERE/.zsh-plugins.txt > $HERE/.zsh-plugins.sh
+echo "Done.\n"
+
+
+# Install .zshrc
 echo "Installing $HOME/.zshrc ..."
-echo "zsh $SOURCE_DIR/.zshrc" > $HOME/.zshrc
-echo "Done."
+echo "source $HERE/.zshrc" > $HOME/.zshrc
+echo "Done.\n"
+
+# Hush login
+touch $HOME/.hushlogin
