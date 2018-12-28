@@ -1,4 +1,0 @@
---skip-bundle
---skip-test-unit
--d postgresql
--m https://raw.github.com/christiannaths/dotfiles/master/Rails/default-template.rb
