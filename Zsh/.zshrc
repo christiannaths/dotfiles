@@ -1,13 +1,16 @@
+#! /usr/local/bin/zsh
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/christiannaths/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 HERE=${0:a:h}
+# echo $HERE
 
 source $HERE/powerline/powerlevel9k/powerlevel9k.zsh-theme
 zsh $HERE/powerline/install.sh
@@ -164,15 +167,14 @@ source $HERE/title.zshrc
 
 
 # autosuggestions
-source $HERE/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $HERE/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # autoenv
 # https://github.com/Tarrasch/zsh-autoenv
-source $HERE/zsh-autoenv
+# source $HERE/zsh-autoenv
 
 # fast-syntax-highlighting
 # https://github.com/zdharma/fast-syntax-highlighting
-source $HERE/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+# source $HERE/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 export PATH="/usr/local/sbin:$PATH"
-
