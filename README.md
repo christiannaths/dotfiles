@@ -1,2 +1,5 @@
-christiannaths does dotfiles
-===========
+# System Config for macOS
+
+## Install
+
+`$ ./install.sh`
