@@ -1,0 +1,5 @@
+ms-vscode.sublime-keybindings
+dbaeumer.vscode-eslint
+rebornix.ruby
+yummygum.city-lights-icon-vsc
+wmaurer.change-case

@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Cloud City",
     "workbench.settings.editor": "json",
     "editor.fontSize": 15,
-    "editor.fontFamily": "Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontWeight": "500",
     "explorer.openEditors.visible": 0,
     "files.hotExit": "off",
@@ -17,5 +17,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "window.openFilesInNewWindow": "on"
+    "window.openFilesInNewWindow": "on",
+    "workbench.iconTheme": "city-lights-icons-vsc-light"
 }
