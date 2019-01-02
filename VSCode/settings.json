@@ -18,5 +18,8 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "window.openFilesInNewWindow": "on",
-    "workbench.iconTheme": "city-lights-icons-vsc-light"
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "files.associations": {
+        ".devrc": "json"
+    }
 }
