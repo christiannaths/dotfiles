@@ -20,6 +20,9 @@
     "window.openFilesInNewWindow": "on",
     "workbench.iconTheme": "city-lights-icons-vsc-light",
     "files.associations": {
-        ".devrc": "json"
-    }
+        ".devrc": "json",
+        ".env.development": "shellscript",
+        ".env.test": "shellscript"
+    },
+    "workbench.startupEditor": "newUntitledFile"
 }
