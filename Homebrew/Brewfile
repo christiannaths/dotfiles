@@ -27,6 +27,7 @@ brew "zsh-completions"
 brew "zsh"
 cask "1password"
 cask "alfred"
+cask "dash"
 cask "docker"
 cask "dropbox"
 cask "expressvpn"
@@ -36,6 +37,7 @@ cask "google-chrome"
 cask "insomnia"
 cask "iterm2"
 cask "moom"
+cask "ngrok"
 cask "notion"
 cask "numi"
 cask "postico"
@@ -47,7 +49,7 @@ cask "visual-studio-code"
 cask "vlc"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
+mas "Medis", id: 1063631769
 mas "Moom", id: 419330170
 mas "Speedtest", id: 1153157709
 mas "Xcode", id: 497799835
-mas "Medis", id: 1063631769
