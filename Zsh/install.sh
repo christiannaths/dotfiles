@@ -7,7 +7,11 @@ echo "Installing oh-my-zsh ..."
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 echo "Done.\n"
 
-# Install antigen
+# Install anitbody
+echo "Installing antibody ..."
+curl -sL git.io/antibody | sh -s
+echo "Done.\n"
+
 echo "Installing zsh bundle ..."
 antibody bundle < $HERE/.zsh-plugins.txt > $HERE/.zsh-plugins.sh
 echo "Done.\n"

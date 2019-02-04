@@ -5,6 +5,8 @@ DISABLE_AUTO_UPDATE="true"
 
 export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 
+alias ls='ls -la'
+
 source $HERE/.zsh-plugins.sh
 source $HERE/git.zshrc
 source $HERE/k8.zshrc

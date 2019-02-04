@@ -55,5 +55,12 @@
     "yml"
   ],
   "window.restoreWindows": "none",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.find.autoFindInSelection": true,
+  "editor.emptySelectionClipboard": false,
+  "editor.scrollBeyondLastLine": true,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top"
 }
