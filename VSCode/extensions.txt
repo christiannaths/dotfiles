@@ -4,3 +4,4 @@ ms-vscode.sublime-keybindings
 rebornix.ruby
 wmaurer.change-case
 yummygum.city-lights-icon-vsc
+esbenp.prettier-vscode

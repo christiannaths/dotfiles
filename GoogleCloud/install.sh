@@ -3,6 +3,7 @@
 echo "Installing gcloud SDK"
 echo "Note: there's no need to install shell command completion, it's already done."
 curl https://sdk.cloud.google.com | bash
+gcloud auth login
 echo -e "Done. \n"
 echo "╔════════════════════════════════════════════════════════════╗"
 echo "╠═ You may wish to configure gcr.io authentication          ═╣"
