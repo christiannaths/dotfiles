@@ -3,7 +3,7 @@ ANTIBODY_HOME="$(antibody home)"
 ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
-export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
+# export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 
 alias ls='ls -la'
 
@@ -12,7 +12,6 @@ source $HERE/git.zshrc
 source $HERE/k8.zshrc
 source $HERE/ruby.zshrc
 source $HERE/node.zshrc
-source $HERE/osx.zshrc
 source $HERE/gcloud.zshrc
 source $HERE/shortcuts.zshrc
 source $HERE/kubectl-completion.zshrc
