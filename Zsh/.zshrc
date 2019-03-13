@@ -16,6 +16,7 @@ source $HERE/gcloud.zshrc
 source $HERE/shortcuts.zshrc
 source $HERE/kubectl-completion.zshrc
 source $HERE/docker.zshrc
+source $HERE/utils.zshrc
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
