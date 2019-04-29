@@ -45,6 +45,7 @@ cask "visual-studio-code"
 cask "vlc"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
+mas "bandwidth", id: 490461369
 mas "Medis", id: 1063631769
 mas "Moom", id: 419330170
 mas "Speedtest", id: 1153157709
