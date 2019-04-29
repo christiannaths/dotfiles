@@ -62,5 +62,8 @@
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top"
+  "editor.snippetSuggestions": "top",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

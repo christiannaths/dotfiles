@@ -2,6 +2,9 @@
 
 HERE=${0:a:h}
 
+echo $HERE
+
+
 # Install oh-my-zsh
 echo "Installing oh-my-zsh ..."
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
