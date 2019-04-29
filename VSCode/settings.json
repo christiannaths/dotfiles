@@ -65,5 +65,6 @@
   "editor.snippetSuggestions": "top",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "explorer.confirmDragAndDrop": false
 }
