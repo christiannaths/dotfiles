@@ -1,7 +1,8 @@
 dbaeumer.vscode-eslint
 dlech.chmod
+esbenp.prettier-vscode
+jpoissonnier.vscode-styled-components
 ms-vscode.sublime-keybindings
 rebornix.ruby
 wmaurer.change-case
 yummygum.city-lights-icon-vsc
-esbenp.prettier-vscode
