@@ -2,6 +2,7 @@ dbaeumer.vscode-eslint
 dlech.chmod
 esbenp.prettier-vscode
 jpoissonnier.vscode-styled-components
+mitchdenny.ecdc
 ms-vscode.sublime-keybindings
 rebornix.ruby
 wmaurer.change-case
