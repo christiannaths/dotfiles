@@ -4,6 +4,7 @@ ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
 export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
+export TLD_PATH=/Users/christiannaths/.local/share/Hinterland/TheLongDark
 
 alias ls='ls -la'
 

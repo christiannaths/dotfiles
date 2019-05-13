@@ -23,7 +23,8 @@
     ".devrc": "json",
     ".env.development": "shellscript",
     ".env.test": "shellscript",
-    "*.env": "shellscript"
+    "*.env": "shellscript",
+    ".huskyrc": "json"
   },
   "workbench.startupEditor": "newUntitledFile",
   "editor.formatOnSave": true,
