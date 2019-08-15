@@ -3,6 +3,15 @@ ANTIBODY_HOME="$(antibody home)"
 ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
+# My prompt
+PROMPT='$FG[133]$%{$reset_color%} '
+
+# newline before prompt
+precmd() { print "" }
+
+# Ident output 4 spaces
+# exec 1> >(sed 's/^/    /')
+
 export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 export TLD_PATH=/Users/christiannaths/.local/share/Hinterland/TheLongDark
 

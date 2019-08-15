@@ -6,4 +6,4 @@ zsh-users/zsh-autosuggestions
 Tarrasch/zsh-autoenv
 zdharma/fast-syntax-highlighting
 mafredri/zsh-async
-sindresorhus/pure
+# sindresorhus/pure

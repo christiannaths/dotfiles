@@ -6,6 +6,9 @@ alias hideall='defaults write com.apple.Finder AppleShowAllFiles NO'
 
 FZF_DEFAULT_OPTS='--height 10 --border --inline-info'
 
+# Dsiable swipe to go back in Chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
 pr() {
   DIR=`find ~/Projects -maxdepth 2 -type d -print 2> /dev/null | grep $1 | fzf` \
     && cd "$DIR"

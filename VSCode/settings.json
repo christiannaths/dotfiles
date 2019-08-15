@@ -24,7 +24,9 @@
     ".env.development": "shellscript",
     ".env.test": "shellscript",
     "*.env": "shellscript",
-    ".huskyrc": "json"
+    ".huskyrc": "json",
+    ". lintstagedrc": "json",
+    ".lintstagedrc": "json"
   },
   "workbench.startupEditor": "newUntitledFile",
   "editor.formatOnSave": true,
@@ -68,5 +70,36 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.confirmDragAndDrop": false,
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": true,
+  "editor.hover.enabled": true,
+  "outline.icons": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabCompletion": "onlySnippets",
+  "ruby.rubocop.onSave": true,
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "ruby.format": "rubocop",
+  "editor.formatOnSaveTimeout": 1500,
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": true,
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "search.usePCRE2": true
 }
