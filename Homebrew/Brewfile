@@ -13,11 +13,13 @@ brew 'fzf'
 brew 'heroku'
 brew 'kubernetes-cli'
 brew 'mas'
+brew 'maven'
 brew 'node'
 brew 'openssl'
 brew 'postgresql'
 brew 'redis'
 brew 'rsync'
+brew 'ruby'
 brew 'ruby-install'
 brew 'tree'
 brew 'watchman'
@@ -36,6 +38,7 @@ cask 'font-source-code-pro'
 cask 'google-chrome'
 cask 'insomnia'
 cask 'iterm2'
+cask 'java'
 cask 'ngrok'
 cask 'notion'
 cask 'numi'
@@ -50,7 +53,7 @@ cask 'vlc'
 mas 'Affinity Designer', id: 824_171_161
 mas 'Affinity Photo', id: 824_183_456
 mas 'bandwidth', id: 490_461_369
+mas 'Gif Brewery 3 by Gfycat', id: 1_081_413_713
 mas 'Medis', id: 1_063_631_769
 mas 'Moom', id: 419_330_170
 mas 'Speedtest', id: 1_153_157_709
-mas 'Gif Brewery 3 by Gfycat', id: 1_081_413_713
