@@ -3,7 +3,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -63,8 +63,8 @@
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Cloud City",
   "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.settings.editor": "json",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Cloud City"
 }
