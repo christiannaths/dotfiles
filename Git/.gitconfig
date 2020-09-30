@@ -3,3 +3,5 @@
 	email = christiannaths@gmail.com
 [color]
 	ui = true
+[pull]
+	rebase = false
