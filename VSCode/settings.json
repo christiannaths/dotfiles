@@ -66,5 +66,11 @@
   "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Cloud City"
+  "workbench.colorTheme": "Cloud City",
+  "macros": {
+    "cleanupWorkspace": [
+      "workbench.action.closeAllEditors",
+      "workbench.files.action.collapseExplorerFolders"
+    ]
+  }
 }
