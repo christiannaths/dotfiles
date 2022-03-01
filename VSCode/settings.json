@@ -2,19 +2,29 @@
   "breadcrumbs.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.emptySelectionClipboard": false,
-  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 16,
-  "editor.fontWeight": "500",
+  "editor.fontFamily": "Operator Mono, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.fontSize": 17,
+  "editor.fontWeight": 400,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.hover.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.parameterHints.enabled": false,
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": false
-  },
+  // "editor.quickSuggestions": {
+  //   "other": true,
+  //   "comments": false,
+  //   "strings": false
+  // },
   "editor.scrollBeyondLastLine": true,
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "onlySnippets",
@@ -50,19 +60,19 @@
     ".env.development.local": "shellscript",
     ".env.staging.local": "shellscript",
     ".env.test.local": "shellscript",
-    "*.local": "shellscript"
+    "*.local": "shellscript",
+    "*.html": "html"
   },
   "javascript.suggest.autoImports": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   "outline.icons": false,
   "typescript.suggest.autoImports": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.validate.enable": false,
   "window.newWindowDimensions": "maximized",
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
-  "window.zoomLevel": 0,
   "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
@@ -72,5 +82,80 @@
       "workbench.action.closeAllEditors",
       "workbench.files.action.collapseExplorerFolders"
     ]
-  }
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+
+  "editor.suggest.showWords": false,
+  "editor.suggest.showValues": false,
+  "editor.suggest.showVariables": false,
+  "editor.suggest.showUsers": false,
+  "editor.suggest.showUnits": false,
+  "editor.suggest.showTypeParameters": false,
+  "editor.suggest.showStructs": false,
+  "javascript.suggest.enabled": false,
+  "typescript.suggest.enabled": false,
+  "editor.suggest.showClasses": false,
+  "editor.suggest.showColors": false,
+  "editor.suggest.showConstructors": false,
+  "editor.suggest.showCustomcolors": false,
+  "editor.suggest.showEnumMembers": false,
+  "editor.suggest.showEnums": false,
+  "editor.suggest.showEvents": false,
+  "editor.suggest.showFields": false,
+  "editor.suggest.showFiles": false,
+  "editor.suggest.showFolders": false,
+  "editor.suggest.showFunctions": false,
+  "editor.suggest.showIcons": false,
+  "editor.suggest.showInlineDetails": false,
+  "editor.suggest.showInterfaces": false,
+  "editor.suggest.showIssues": false,
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showMethods": false,
+  "editor.suggest.showModules": false,
+  "editor.suggest.showOperators": false,
+  "editor.suggest.showProperties": false,
+  "editor.suggest.showReferences": false,
+  "editor.suggest.showSnippets": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "html.suggest.html5": false,
+  "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+  "javascript.suggest.names": false,
+  "javascript.suggest.paths": false,
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggest.completeJSDocs": false,
+  "typescript.suggest.paths": false,
+  "typescript.suggest.includeAutomaticOptionalChainCompletions": false,
+  "typescript.suggestionActions.enabled": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  // Decoration colors for packages
+  "importCost.smallPackageColor": "#d7d9db",
+  "importCost.mediumPackageColor": "#d7d9db",
+  "importCost.largePackageColor": "#d7d9db",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "jsonc": false,
+    "javascript": true,
+    "json": false
+  },
+  "editor.letterSpacing": 0,
+  "swiftformat.enable": true,
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-swiftformat"
+  },
+  "editor.unicodeHighlight.allowedCharacters": {
+    "️": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false
 }

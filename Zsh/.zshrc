@@ -18,13 +18,13 @@ export TLD_PATH=/Users/christiannaths/.local/share/Hinterland/TheLongDark
 alias ls='ls -la'
 
 source $HERE/.zsh-plugins.sh
+source $HERE/homebrew.zshrc
 source $HERE/git.zshrc
 source $HERE/k8.zshrc
 source $HERE/ruby.zshrc
 source $HERE/node.zshrc
 source $HERE/osx.zshrc
 source $HERE/gcloud.zshrc
-source $HERE/shortcuts.zshrc
 source $HERE/kubectl-completion.zshrc
 source $HERE/docker.zshrc
 

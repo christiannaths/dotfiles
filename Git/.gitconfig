@@ -5,3 +5,7 @@
 	ui = true
 [pull]
 	rebase = false
+[http]
+	postBuffer = 157286400
+[pager]
+	branch = false
