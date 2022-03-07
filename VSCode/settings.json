@@ -154,6 +154,13 @@
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-swiftformat"
   },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
   },

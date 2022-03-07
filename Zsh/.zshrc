@@ -13,20 +13,14 @@ precmd() { print "" }
 # exec 1> >(sed 's/^/    /')
 
 export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
-export TLD_PATH=/Users/christiannaths/.local/share/Hinterland/TheLongDark
+export PATH="/usr/local/sbin:$PATH"
 
 alias ls='ls -la'
 
+
 source $HERE/.zsh-plugins.sh
-source $HERE/homebrew.zshrc
-source $HERE/git.zshrc
-source $HERE/k8.zshrc
-source $HERE/ruby.zshrc
-source $HERE/node.zshrc
-source $HERE/osx.zshrc
-source $HERE/gcloud.zshrc
-source $HERE/kubectl-completion.zshrc
-source $HERE/docker.zshrc
+for config ("$HERE"/*.zshrc) source $config
+
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
