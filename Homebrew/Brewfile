@@ -8,6 +8,7 @@ tap 'drone/drone'
 
 brew 'aria2'
 brew 'chruby'
+brew 'coreutils'
 brew 'drone'
 brew 'fzf'
 brew 'getantibody/tap/antibody'

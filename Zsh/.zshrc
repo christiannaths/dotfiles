@@ -15,12 +15,10 @@ precmd() { print "" }
 export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 
-alias ls='ls -la'
-
-
 source $HERE/.zsh-plugins.sh
 for config ("$HERE"/*.zshrc) source $config
 
+alias ls='/usr/local/bin/gls --color -h --group-directories-first -la'
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
