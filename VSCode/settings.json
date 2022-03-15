@@ -61,7 +61,8 @@
     ".env.staging.local": "shellscript",
     ".env.test.local": "shellscript",
     "*.local": "shellscript",
-    "*.html": "html"
+    "*.html": "html",
+    ".lintstagedrc": "json"
   },
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -159,7 +160,11 @@
   },
   "[ruby]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
