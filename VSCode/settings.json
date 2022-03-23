@@ -62,7 +62,8 @@
     ".env.test.local": "shellscript",
     "*.local": "shellscript",
     "*.html": "html",
-    ".lintstagedrc": "json"
+    ".lintstagedrc": "json",
+    "*.erb": "erb"
   },
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
