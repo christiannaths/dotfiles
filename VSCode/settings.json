@@ -1,6 +1,10 @@
 {
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "Cloud City",
+  "workbench.iconTheme": "city-lights-icons-vsc-light",
+  "workbench.settings.editor": "json",
   "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "Operator Mono, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.tokenColorCustomizations": {
@@ -20,11 +24,6 @@
   "editor.hover.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.parameterHints.enabled": false,
-  // "editor.quickSuggestions": {
-  //   "other": true,
-  //   "comments": false,
-  //   "strings": false
-  // },
   "editor.scrollBeyondLastLine": true,
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "onlySnippets",
@@ -63,7 +62,8 @@
     "*.local": "shellscript",
     "*.html": "html",
     ".lintstagedrc": "json",
-    "*.erb": "erb"
+    "*.erb": "erb",
+    "*.jsx": "javascript"
   },
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -75,10 +75,8 @@
   "window.newWindowDimensions": "maximized",
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
-  "workbench.iconTheme": "city-lights-icons-vsc-light",
-  "workbench.settings.editor": "json",
+
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Cloud City",
   "macros": {
     "cleanupWorkspace": [
       "workbench.action.closeAllEditors",
@@ -91,7 +89,6 @@
     "comments": false,
     "strings": false
   },
-
   "editor.suggest.showWords": false,
   "editor.suggest.showValues": false,
   "editor.suggest.showVariables": false,
@@ -143,13 +140,14 @@
   "importCost.largePackageColor": "#d7d9db",
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "yaml": false,
     "plaintext": false,
     "markdown": false,
     "jsonc": false,
     "javascript": true,
-    "json": false
+    "json": false,
+    "typescript": true
   },
   "editor.letterSpacing": 0,
   "swiftformat.enable": true,
@@ -170,5 +168,8 @@
   "editor.unicodeHighlight.allowedCharacters": {
     "️": true
   },
-  "editor.unicodeHighlight.ambiguousCharacters": false
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.format": "Letter",
+  "notebook.lineNumbers": "on"
 }
