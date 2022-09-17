@@ -1,12 +1,10 @@
 {
-  "breadcrumbs.enabled": false,
-  "editor.bracketPairColorization.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "Cloud City",
   "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.settings.editor": "json",
-  "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "Operator Mono, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.bracketPairColorization.enabled": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -19,21 +17,10 @@
   },
   "editor.fontSize": 17,
   "editor.fontWeight": 400,
+  "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.hover.enabled": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.parameterHints.enabled": false,
-  "editor.scrollBeyondLastLine": true,
-  "editor.snippetSuggestions": "top",
-  "editor.tabCompletion": "onlySnippets",
-  "editor.tabSize": 2,
-  "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "yarn",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
-  "extensions.ignoreRecommendations": true,
-  "files.hotExit": "off",
+
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -45,131 +32,18 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.associations": {
-    ".env.development": "shellscript",
-    ".env.test": "shellscript",
-    "*.env": "shellscript",
-    ".env.staging": "shellscript",
-    ".env.production": "shellscript",
-    ".env.production.local": "shellscript",
-    ".foreman": "shellscript",
-    "Procfile": "shellscript",
-    ".powrc": "shellscript",
-    "*.apns": "json",
-    ".env.development.local": "shellscript",
-    ".env.staging.local": "shellscript",
-    ".env.test.local": "shellscript",
-    "*.local": "shellscript",
-    "*.html": "html",
-    ".lintstagedrc": "json",
-    "*.erb": "erb",
-    "*.jsx": "javascript"
-  },
-  "javascript.suggest.autoImports": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "javascript.validate.enable": false,
-  "outline.icons": false,
-  "typescript.suggest.autoImports": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "typescript.validate.enable": false,
-  "window.newWindowDimensions": "maximized",
-  "window.openFilesInNewWindow": "on",
-  "window.restoreWindows": "none",
-
-  "workbench.startupEditor": "newUntitledFile",
+  "editor.inlineSuggest.enabled": true,
   "macros": {
     "cleanupWorkspace": [
       "workbench.action.closeAllEditors",
       "workbench.files.action.collapseExplorerFolders"
     ]
   },
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.quickSuggestions": {
-    "other": false,
-    "comments": false,
-    "strings": false
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.associations": {
+    ".env.local": "shellscript"
   },
-  "editor.suggest.showWords": false,
-  "editor.suggest.showValues": false,
-  "editor.suggest.showVariables": false,
-  "editor.suggest.showUsers": false,
-  "editor.suggest.showUnits": false,
-  "editor.suggest.showTypeParameters": false,
-  "editor.suggest.showStructs": false,
-  "javascript.suggest.enabled": false,
-  "typescript.suggest.enabled": false,
-  "editor.suggest.showClasses": false,
-  "editor.suggest.showColors": false,
-  "editor.suggest.showConstructors": false,
-  "editor.suggest.showCustomcolors": false,
-  "editor.suggest.showEnumMembers": false,
-  "editor.suggest.showEnums": false,
-  "editor.suggest.showEvents": false,
-  "editor.suggest.showFields": false,
-  "editor.suggest.showFiles": false,
-  "editor.suggest.showFolders": false,
-  "editor.suggest.showFunctions": false,
-  "editor.suggest.showIcons": false,
-  "editor.suggest.showInlineDetails": false,
-  "editor.suggest.showInterfaces": false,
-  "editor.suggest.showIssues": false,
-  "editor.suggest.showKeywords": false,
-  "editor.suggest.showMethods": false,
-  "editor.suggest.showModules": false,
-  "editor.suggest.showOperators": false,
-  "editor.suggest.showProperties": false,
-  "editor.suggest.showReferences": false,
-  "editor.suggest.showSnippets": false,
-  "editor.suggestOnTriggerCharacters": false,
-  "html.suggest.html5": false,
-  "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
-  "javascript.suggest.names": false,
-  "javascript.suggest.paths": false,
-  "javascript.suggestionActions.enabled": false,
-  "typescript.suggest.completeJSDocs": false,
-  "typescript.suggest.paths": false,
-  "typescript.suggest.includeAutomaticOptionalChainCompletions": false,
-  "typescript.suggestionActions.enabled": false,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "workbench.editor.untitled.hint": "hidden",
-  // Decoration colors for packages
-  "importCost.smallPackageColor": "#d7d9db",
-  "importCost.mediumPackageColor": "#d7d9db",
-  "importCost.largePackageColor": "#d7d9db",
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": false,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "jsonc": false,
-    "javascript": true,
-    "json": false,
-    "typescript": true
-  },
-  "editor.letterSpacing": 0,
-  "swiftformat.enable": true,
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-swiftformat"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust"
-  },
-  "[ruby]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[erb]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "editor.unicodeHighlight.allowedCharacters": {
-    "️": true
-  },
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "markdown-pdf.displayHeaderFooter": false,
-  "markdown-pdf.format": "Letter",
-  "notebook.lineNumbers": "on"
+  "workbench.startupEditor": "none",
+  "window.newWindowDimensions": "maximized"
 }

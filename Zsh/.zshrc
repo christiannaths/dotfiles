@@ -3,11 +3,7 @@ ANTIBODY_HOME="$(antibody home)"
 ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
-# My prompt
-PROMPT='$FG[133]$%{$reset_color%} '
 
-# newline before prompt
-precmd() { print "" }
 
 # Ident output 4 spaces
 # exec 1> >(sed 's/^/    /')
@@ -25,3 +21,12 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nano'
 fi
+
+# My prompt
+
+shownode() {
+  if test -f "$(pwd)/package.json" && echo "node $(node -v) "
+}
+
+precmd() { print "" }
+PROMPT='%F{white}$(shownode)%F{reset}%F{133}❯%F{reset} '

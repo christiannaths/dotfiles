@@ -1,10 +1,6 @@
 # Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
-# n
-export N_PREFIX="$HOME/.n"
-export PATH="$N_PREFIX/bin:$PATH"
-
 yarn-add-eslint () {
   yarn add --dev \
     eslint-config-react-app@2.1.0 \
