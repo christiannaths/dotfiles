@@ -737,13 +737,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.866485595703125</real>
+				<real>0.74870109558105469</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.83904038565314698</real>
+				<real>0.7249866489277953</real>
 				<key>Red Component</key>
-				<real>0.79983285757211564</real>
+				<real>0.69110871649390448</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -1617,8 +1617,6 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
-	<key>PreventEscapeSequenceFromClearingHistory</key>
-	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
