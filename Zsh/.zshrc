@@ -24,9 +24,9 @@ fi
 
 # My prompt
 
-shownode() {
+shownodeversion() {
   if test -f "$(pwd)/package.json" && echo "node $(node -v) "
 }
 
 precmd() { print "" }
-PROMPT='%F{white}$(shownode)%F{reset}%F{133}❯%F{reset} '
+PROMPT='%F{white}$(shownodeversion)%F{reset}%F{133}❯%F{reset} '

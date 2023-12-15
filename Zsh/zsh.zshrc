@@ -25,8 +25,6 @@ winzip(){
   fi
 }
 
-eval "$(pyenv init --path)"
-
 
 makegif() {
   echo "Converting $1 to a gif...";
