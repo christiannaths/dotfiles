@@ -3,8 +3,43 @@ alias hideall='defaults write com.apple.Finder AppleShowAllFiles NO'
 
 FZF_DEFAULT_OPTS='--height 10 --border --inline-info'
 
-# Dsiable swipe to go back in Chrome
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
+winzip(){
+  if [ -e $1.zip ]
+  then
+    rm $1.zip
+  fi
+
+  if [ -z "$2" ]
+  then
+    # No second argument, use original directory name
+    # zip -r -X $1 $1.zip -x\*.DS_Store
+    zip -r -X $1.zip $1 -x\*.DS_Store
+  else
+    # Second argument, use specified directory name
+    echo "Copying $1 to $2"
+    cp -r $1 $2
+    echo "Zipping up $2"
+    zip -r -X $2 $2 -x\*.DS_Store
+    echo "Removing unessesary $2 directory"
+    rm -r $2
+  fi
+}
+
+
+makegif() {
+  echo "Converting $1 to a gif...";
+
+  ffmpeg -t 3 -i $1 -filter_complex "[0:v] palettegen" $1.png;
+  ffmpeg -i $1 -i $1.png -filter_complex "[0:v] fps=10,scale=720:-1 [new];[new][1:v] paletteuse" $1.gif;
+  rm $1.png;
+
+  echo "Done. Saved as $1.gif";
+}
 
 function export-env() {
   FILE=.env
@@ -55,9 +90,3 @@ pr() {
   local DIR=$(echo $SELECT_DIR | sed "s/\~/$ESC_HOME/")
   cd "$DIR"
 }
-
-# https://apple.stackexchange.com/questions/230719/how-to-disable-app-relaunch-and-window-restore-in-el-capitan-on-reboot
-# Make the file owned by root (otherwise the OS will just replace it)
-# sudo chown root ~/Library/Preferences/ByHost/com.apple.loginwindow*
-# Remove all permissions, so it can't be read or written to
-# sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*

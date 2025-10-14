@@ -4,7 +4,7 @@ fpath=(~/.zsh $fpath)
 
 alias gs='git status'
 alias gcm='git commit -am'
-alias gbr='git branch'
+# alias gbr='git branch'
 alias gch='git checkout'
 alias gpr='git push -u origin HEAD && git open'
 
@@ -19,3 +19,10 @@ function git-timesheet() {
   git log --author="${author}" --since="${from} 0:00:00 2022 -0000" --until="${to} 23:59:59 2022 -0000" --reverse --format="format:%ad, \"%s\"" --date="format:%Y-%m-%d" > $filename
   code "${filename}"
 }
+
+function git-branch() {
+  local BRANCH=$(git branch | grep -v "*" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | fzf)
+  git checkout $BRANCH
+}
+
+alias gbr='git-branch'

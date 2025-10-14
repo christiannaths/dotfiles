@@ -157,12 +157,6 @@ sass-watch(){
   sass --watch --line-numbers --style compact .:.
 }
 
-nuke-npm(){
-  rm -fr node_modules/
-  npm cache clean
-  npm install
-}
-
 download-site(){
   wget -mkEpnp $1
 }
@@ -266,12 +260,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export N_PREFIX="$HOME/.n"
 export PATH="$N_PREFIX/bin:$PATH"
 # export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-source "/Users/christiannaths/.google-cloud-sdk/path.bash.inc"
-
-# The next line enables shell command completion for gcloud.
-source "/Users/christiannaths/.google-cloud-sdk/completion.bash.inc"
 
 export PATH="/usr/local/sbin:$PATH"
 

@@ -1,9 +1,22 @@
 #!/bin/bash
 
+
+SOURCE="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz"
+DESTINATION="/Applications"
+
+
+
 echo "Installing gcloud SDK"
 echo "Note: there's no need to install shell command completion, it's already done."
-curl https://sdk.cloud.google.com | bash
-gcloud auth login
+
+
+wget -qO- $SOURCE | tar xvz -C $DESTINATION
+sh $DESTINATION/google-cloud-sdk/install.sh --install-python=false --quiet
+
+
+# gcloud auth login
+
+
 echo -e "Done. \n"
 echo "╔════════════════════════════════════════════════════════════╗"
 echo "╠═ You may wish to configure gcr.io authentication          ═╣"

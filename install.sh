@@ -7,4 +7,5 @@ echo -e "Installing everything \n" \
     && ./Node/install.sh \
     && ./VSCode/install.sh \
     && ./GoogleCloud/install.sh \
+    && ./Java/install.sh \
     && echo -e "Done. \n"
