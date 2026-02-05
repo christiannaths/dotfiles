@@ -1,3 +1,4 @@
 .DS_Store
 .installed
 .zsh-plugins.sh
+fish/fish_variables
