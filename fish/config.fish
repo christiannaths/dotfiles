@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 set -gx EDITOR nano
+set -gx LESS -R
 
 alias ls='ls -laF --color=auto'
 alias grep='grep --color=auto'

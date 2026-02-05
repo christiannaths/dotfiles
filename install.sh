@@ -51,7 +51,14 @@ fish -c "fisher update"
 echo "Done."
 echo
 
-# 5. Exit messages
+# 5. Configure iTerm
+# ---------------------------------
+echo "Configuring iTerm..."
+defaults write com.googlecode.iterm2 AlternateMouseScroll -bool true
+echo "Done."
+echo
+
+# 6. Exit messages
 # ---------------------------------
 echo "Installation complete. Enjoy your new setup!"
 echo "P.S. You can run \`zoxide-prime\` to preload zoxide with your projects"
