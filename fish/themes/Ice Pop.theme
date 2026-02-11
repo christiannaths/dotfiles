@@ -1,0 +1,43 @@
+# name: Ice Pop
+# author: Christian Naths
+# preferred_background: ffffff
+
+fish_color_normal 262d35
+fish_color_command 6e0acd
+fish_color_keyword 6e0acd
+fish_color_param 262d35
+fish_color_option 0954cd
+fish_color_quote 20b757
+fish_color_escape b8c0cc
+fish_color_error f44865
+fish_color_comment b8c0cc
+fish_color_operator 8e9bae
+fish_color_redirection c2146a --bold
+fish_color_end 8e9bae
+fish_color_autosuggestion b8c0cc
+fish_color_cancel f44865 --reverse
+fish_color_cwd 0954cd
+fish_color_cwd_root ce8408
+fish_color_user 0954cd
+fish_color_host 0954cd
+fish_color_host_remote 1a9447
+fish_color_valid_path --underline
+fish_color_search_match --background=edeff2 --bold
+fish_color_selection --background=d5dae1
+fish_color_history_current --bold
+fish_color_status f44865
+fish_color_gray 6b7c94
+
+fish_pager_color_background
+fish_pager_color_completion 262d35
+fish_pager_color_description 6b7c94
+fish_pager_color_prefix 0954cd --bold --underline
+fish_pager_color_progress 262d35 --background=0954cd
+fish_pager_color_secondary_background
+fish_pager_color_secondary_completion 262d35
+fish_pager_color_secondary_description 6b7c94
+fish_pager_color_secondary_prefix 0954cd
+fish_pager_color_selected_background --background=edeff2
+fish_pager_color_selected_completion 262d35
+fish_pager_color_selected_description 37404d
+fish_pager_color_selected_prefix 0954cd --bold
