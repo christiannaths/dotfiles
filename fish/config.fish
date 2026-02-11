@@ -12,3 +12,9 @@ alias gaa='git add .'
 alias code='zed .'
 
 zoxide init fish | source
+
+# gib
+set --export GIB_INSTALL /Users/christiannaths/.gib
+set --export PATH /Users/christiannaths/.gib/bin $PATH
+
+fish_add_path -gm /Users/christiannaths/go/bin
