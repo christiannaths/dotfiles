@@ -1,7 +1,3 @@
-if status is-interactive
-# Commands to run in interactive sessions can go here
-end
-
 set -gx EDITOR nano
 set -gx LESS -R
 
@@ -12,6 +8,7 @@ alias gaa='git add .'
 alias code='zed .'
 
 zoxide init fish | source
+starship init fish | source
 
 # gib
 set --export GIB_INSTALL /Users/christiannaths/.gib

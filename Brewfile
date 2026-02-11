@@ -7,6 +7,7 @@ brew 'coreutils'
 brew 'fish'
 brew 'fisher'
 brew 'mise'
+brew 'starship'
 brew 'wget'
 
 # Optional

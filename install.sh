@@ -44,21 +44,29 @@ ln -s $HERE/fish ~/.config/fish
 echo "Done."
 echo
 
-# 4. Install fish plugins
+# 4. Symlink starship config
+# ---------------------------------
+echo "Symlinking starship config..."
+mkdir -p ~/.config
+ln -sf $HERE/starship.toml ~/.config/starship.toml
+echo "Done."
+echo
+
+# 5. Install fish plugins
 # ---------------------------------
 echo "Installing fish plugins..."
 fish -c "fisher update"
 echo "Done."
 echo
 
-# 5. Configure iTerm
+# 6. Configure iTerm
 # ---------------------------------
 echo "Configuring iTerm..."
 defaults write com.googlecode.iterm2 AlternateMouseScroll -bool true
 echo "Done."
 echo
 
-# 6. Exit messages
+# 7. Exit messages
 # ---------------------------------
 echo "Installation complete. Enjoy your new setup!"
 echo "P.S. You can run \`zoxide-prime\` to preload zoxide with your projects"
