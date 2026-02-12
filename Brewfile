@@ -13,6 +13,7 @@ brew 'wget'
 # Optional
 brew 'ffmpeg'
 brew 'fzf'
+brew 'gh'
 brew 'git-open'
 brew 'gpg'
 brew 'mas'
