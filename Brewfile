@@ -40,3 +40,4 @@ cask 'zed'
 
 mas 'Pikka', id: 1195076754
 mas 'Speedtest', id: 1_153_157_709
+mas 'amphetamine', id: 937984704
